@@ -9,7 +9,9 @@ public class HelloController {
     
     @RequestMapping("/")
     public String index() {
-        return "Hello World\n";
+        
+        String message = "Hello World!\n" + new java.util.Date().toString();
+        return message;
     }
     
 }
